@@ -17,7 +17,7 @@
             border-radius: 50%;
             z-index: 0;
             filter: blur(40px);
-            animation: float Orb 20s infinite alternate;
+            animation: floatOrb 20s infinite alternate;
         }
 
         @keyframes floatOrb {
@@ -45,7 +45,7 @@
 </head>
 <body class="bg-[#fdf2f2] text-gray-800">
     @if(!Route::is('login'))
-    <x-navbar :username="$username ?? 'Staff'" /> 
+    @include('components.navbar', ['username' => $username ?? 'Staff'])
     @endif
 
     <main class="min-h-screen">
@@ -53,7 +53,7 @@
     </main>
 
     @if(!Route::is('login'))
-        <x-footer />
+    @include('components.footer')
     @endif
 </body>
 </html>
