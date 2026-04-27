@@ -7,7 +7,7 @@
     <div class="flex flex-col md:flex-row justify-between items-end gap-4">
         <div>
             <h2 class="font-serif text-4xl text-pink-900 italic font-bold">Store Performance</h2>
-            <p class="text-pink-400 uppercase tracking-widest text-xs font-bold mt-2">Analytical Report for {{ $username }}</p>
+            <p class="text-pink-400 uppercase tracking-widest text-xs font-bold mt-2">Analytical Report for {{ $username }} 🌸</p>
         </div>
         <div class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-pink-50 text-pink-900 font-bold text-xs flex items-center gap-3">
         {{-- Ikon Kalender Minimalis --}}
@@ -62,7 +62,7 @@
         <div class="bg-pink-500 p-10 rounded-[50px] shadow-xl text-white relative overflow-hidden">
             <div class="relative z-10">
                 <h4 class="font-bold mb-4 uppercase tracking-widest text-sm opacity-80">Best Selling Category</h4>
-                <h3 class="font-serif text-5xl mb-6 italic">Premium Bouquet</h3>
+                <h3 class="font-serif text-5xl mb-6 italic">Premium Flower</h3>
                 <p class="text-sm opacity-90 leading-relaxed mb-8">
                     Kategori bunga premium menyumbang 65% dari total pendapatan bulan ini. 
                     Pelanggan sangat menyukai kombinasi Rose dan White Lily.
