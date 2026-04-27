@@ -2,6 +2,7 @@ Website yang saya buat adalah sebuah aplikasi florist digital yang berfokus pada
 
 Namun, pada tahap ini aplikasi belum menggunakan database, sehingga setiap proses penambahan, pengeditan, maupun penghapusan data belum tersimpan secara permanen dan tidak menyebabkan perubahan data secara nyata.
 
+Live Web: 
 halaman login:
 ![alt text](image-1.png)
 
@@ -9,9 +10,29 @@ halaman login:
 
 halaman homepage:
 ![alt text](image-3.png)
-
 ![alt text](image-4.png)
-
 ![alt text](image-5.png)
 
+halaman dashboard:
 ![alt text](image-6.png)
+![alt text](image-7.png)
+
+halaman pengelolaan:
+![alt text](image-8.png)
+![alt text](image-12.png)
+
+filter pengelolaan:
+![alt text](image-9.png)
+![alt text](image-13.png)
+
+form tambah:
+![alt text](image-11.png)
+![alt text](image-14.png)
+
+form edit:
+![alt text](image-10.png)
+![alt text](image-15.png)
+
+halaman profile:
+![alt text](image-16.png)
+![alt text](image-17.png)

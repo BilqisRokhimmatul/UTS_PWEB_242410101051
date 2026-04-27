@@ -4,8 +4,7 @@
 @section('content')
 <div class="max-w-4xl mx-auto px-6 py-20">
     <div class="bg-white rounded-[60px] shadow-2xl p-12 text-center border border-pink-50">
-        
-        {{-- Avatar Simple --}}
+
         <div class="inline-block relative mb-6">
             <div class="w-32 h-32 rounded-full bg-pink-100 flex items-center justify-center text-5xl border-4 border-white shadow-lg">
                 🌸
@@ -16,13 +15,11 @@
         <p class="text-pink-400 uppercase tracking-widest text-xs font-bold mb-10">Owner of Bloom & Grace</p>
 
         <div class="space-y-4 max-w-xs mx-auto">
-            {{-- Info Stats --}}
             <div class="bg-pink-50/50 p-4 rounded-3xl flex justify-between px-8">
                 <span class="text-pink-900/50 text-sm">Status</span>
                 <span class="text-pink-600 font-bold text-sm">Administrator</span>
             </div>
-            
-            {{-- Tombol Logout --}}
+
             <a href="{{ route('login') }}" 
                onclick="return confirm('Apakah kamu yakin ingin keluar dari aplikasi?')"
                class="flex items-center justify-center gap-2 w-full bg-red-50 text-red-500 py-4 rounded-full font-bold shadow-sm hover:bg-red-500 hover:text-white transition duration-300">

@@ -2,7 +2,6 @@
 @section('title', 'Inventory Management')
 
 @section('content')
-{{-- Tambahkan 'filterKategori' di x-data --}}
 <div class="p-4 md:p-8">
 <div class="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-10 space-y-8"
      x-data="{ 
@@ -11,8 +10,7 @@
         filterKategori: 'Semua',
         editItem: {nama: '', kategori: '', stok: '', harga: ''} 
      }">
-    
-    {{-- Header --}}
+
     <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
         <div>
             <h2 class="font-serif text-3xl text-pink-900 font-bold italic">Flower Inventory</h2>
@@ -20,7 +18,6 @@
         </div>
         
         <div class="flex flex-col md:flex-row items-stretch md:items-center gap-4 w-full md:w-auto">
-            {{-- Dropdown Filter --}}
             <div class="flex flex-col space-y-1">
                 <label class="text-[10px] uppercase font-bold text-pink-300 ml-4 italic">Filter Category</label>
                 <select x-model="filterKategori" 
@@ -39,7 +36,6 @@
         </div>
     </div>
 
-    {{-- Tabel Produk --}}
     <div class="bg-white rounded-[30px] md:rounded-[40px] shadow-xl border border-pink-50 overflow-hidden">
     <div class="overflow-x-auto min-w-full">
         <table class="w-full text-left">
@@ -54,8 +50,6 @@
             </thead>
             <tbody class="divide-y divide-pink-50">
                 @foreach($items as $item)
-                {{-- Logika Filter: x-show akan menyembunyikan baris jika kategori tidak cocok --}}
-                {{-- Logika Zebra: even:bg-pink-50/20 membuat baris genap berwarna pink muda --}}
                 <tr x-show="filterKategori === 'Semua' || filterKategori === '{{ $item['kategori'] }}'" 
                     class="hover:bg-pink-100/30 transition even:bg-pink-50/30 group">
                     
@@ -92,12 +86,11 @@
         </table>
     </div>
 
-    {{-- MODAL FORM TAMBAH (Tetap Sama) --}}
     <div x-show="openAdd" class="fixed inset-0 z-[60] flex items-center justify-center bg-pink-900/20 backdrop-blur-sm p-4" style="display: none;" x-transition>
         <div class="bg-white w-full max-w-md p-6 md:p-10 rounded-[30px] md:rounded-[50px] shadow-2xl border border-pink-50 max-h-[90vh] overflow-y-auto">
             <h3 class="font-serif text-2xl text-pink-900 mb-6 font-bold italic text-center underline decoration-pink-200">Add New Flower</h3>
-            <form action="{{ route('pengelolaan') }}" method="GET" class="space-y-4"> {{-- Arahkan ke route yang sama --}}
-            <input type="hidden" name="username" value="{{ $username }}"> {{-- Nama kamu dititipkan di sini --}}
+            <form action="{{ route('pengelolaan') }}" method="GET" class="space-y-4"> 
+            <input type="hidden" name="username" value="{{ $username }}"> 
                 <input type="text" placeholder="Flower Name" class="w-full px-6 py-3 rounded-full bg-pink-50 border-none focus:ring-2 focus:ring-pink-300 outline-none">
                 <select class="w-full px-6 py-3 rounded-full bg-pink-50 border-none focus:ring-2 focus:ring-pink-300 outline-none">
                     <option disabled selected>Select Category</option>
@@ -117,13 +110,12 @@
         </div>
     </div>
 
-    {{-- MODAL FORM EDIT (Tetap Sama) --}}
     <div x-show="openEdit" class="fixed inset-0 z-[60] flex items-center justify-center bg-pink-900/20 backdrop-blur-sm p-4" style="display: none;" x-transition>
         <div class="bg-white w-full max-w-md p-6 md:p-10 rounded-[30px] md:rounded-[50px] shadow-2xl border border-pink-50 max-h-[90vh] overflow-y-auto">
             <h3 class="font-serif text-2xl text-pink-900 mb-2 font-bold italic text-center underline decoration-pink-200">Edit Product</h3>
             <p class="text-pink-400 text-[10px] mb-6 italic text-center uppercase tracking-widest font-bold">Updating your collection</p>
             
-            <form action="{{ route('pengelolaan') }}" method="GET" class="space-y-4"> {{-- Arahkan ke route yang sama --}}
+            <form action="{{ route('pengelolaan') }}" method="GET" class="space-y-4"> 
             <input type="hidden" name="username" value="{{ $username }}">
                 <div>
                     <label class="text-[10px] uppercase font-bold text-pink-300 ml-4 italic">Flower Name</label>

@@ -25,10 +25,9 @@
             100% { transform: translate(20%, 20%); }
         }
 
-/* Animasi Kelopak Bunga Berjatuhan */
         .petal {
             position: absolute;
-            background-color: #ffdae9; /* Warna pink kelopak */
+            background-color: #ffdae9; 
             border-radius: 150% 0 150% 0;
             animation: falling 10s infinite linear;
             opacity: 0.6;

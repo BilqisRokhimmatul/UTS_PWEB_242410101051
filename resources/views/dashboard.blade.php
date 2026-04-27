@@ -3,21 +3,19 @@
 
 @section('content')
 <div class="max-w-7xl mx-auto px-6 py-10 space-y-10">
-    {{-- Header Dashboard --}}
     <div class="flex flex-col md:flex-row justify-between items-end gap-4">
         <div>
             <h2 class="font-serif text-4xl text-pink-900 italic font-bold">Store Performance</h2>
             <p class="text-pink-400 uppercase tracking-widest text-xs font-bold mt-2">Analytical Report for {{ $username }} 🌸</p>
         </div>
         <div class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-pink-50 text-pink-900 font-bold text-xs flex items-center gap-3">
-        {{-- Ikon Kalender Minimalis --}}
+
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
         </svg> April 2026
         </div>
     </div>
 
-    {{-- Baris Statistik Utama --}}
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div class="bg-white p-8 rounded-[40px] shadow-sm border-l-8 border-pink-400">
             <p class="text-xs font-bold text-pink-300 uppercase tracking-widest">Revenue</p>
@@ -41,7 +39,6 @@
         </div>
     </div>
 
-    {{-- Grafik Visual (Bohongan pakai CSS biar cepet) --}}
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white p-10 rounded-[50px] shadow-sm border border-pink-50">
             <h4 class="font-bold text-pink-900 mb-8 uppercase tracking-widest text-sm">Weekly Sales Chart</h4>
@@ -69,7 +66,6 @@
                 </p>
                 <button class="bg-white text-pink-600 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest shadow-lg">Download Report</button>
             </div>
-            {{-- Aksen Dekorasi --}}
             <div class="absolute -right-10 -bottom-10 text-[150px] opacity-10 italic">🌸</div>
         </div>
     </div>
