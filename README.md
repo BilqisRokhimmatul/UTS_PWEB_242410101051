@@ -20,10 +20,12 @@ Namun, pada tahap ini aplikasi belum menggunakan database, sehingga setiap prose
 #### 5. Filter Pengelolaan
 ![alt text](image-6.png)
 
-#### 6. Form Tambah
+#### 6. Form Tambah 
+hanya tampilan dan cuman bisa buat diisi namun tidak dapat menyimpan data terbaru karena belom ada databasenya
 ![alt text](image-7.png)
 
 #### 7. Form Edit
+hanya tampilan dan cuman bisa buat diisi namun tidak dapat menyimpan data terbaru karena belom ada databasenya
 ![alt text](image-8.png)
 
 #### 8. Halaman Profile
